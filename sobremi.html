@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Ignacio Lemarie</a>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#" class="logo-ham"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#b74b4b"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobremi.html" class="active">Sobre Mí</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="sobremi.html" class="active">Sobre Mí</a></li>
+                <li class="hideOnMobile"><a href="servicios.html">Servicios</a></li>
+                <li class="hideOnMobile"><a href="experiencia.html">Experiencia</a></li>
+                <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#b74b4b"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector(".sidebar")  
+                sidebar.style.display = "flex"
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector(".sidebar")  
+                sidebar.style.display = "none"
+            }
+        </script>
+    </header>
+    <section class="data-sobremi">
+        <div class="titulo-sobremi">
+            <h2>Desarrollo <span class="red-text">Laboral</span> y <span class="red-text">Profesional</span>:</h2>
+        </div>
+        <div class="sobremi-headcontent">
+            <p>Trabajo de asistente técnico en la <a href="https://www.argentina.gob.ar/jst" target="_blank"
+                    class="jst-link">Junta de Seguridad en el Transporte</a> y soy estudiante de desarrollo de software en la <a
+                        href="https://www.uade.edu.ar" target="_blank" class="uade-link">UADE</a>.</p>
+        </div>
+        <div class="sobremi-midcontent">
+            <div class="sobremi-img">
+                <img src="imagenes/perfil-sobremi.JPG" alt="Ignacio relax">
+            </div>
+            <div class="sobremi-text">
+                <p>Nací en la Ciudad de Buenos Aires el 22 de junio del 2002. Realicé mis estudios primarios en el Centro Educativo San Francisco Javier y mis estudios secundarios en el <span class="red-text">Instituto León XIII</span> donde me recibí en el año 2020 durante la pandemia del COVID-19, adquiriendo el título de <span class="red-text">Bachillerato en Economía y Administración</span>. <br><br>
+
+                    En el 2021 tuve mi primer trabajo como <span class="red-text">cadete</span> en una <span class="red-text">empresa de venta de accesorios tecnológicos y reparación de celulares</span>, donde adquirí mayor entendimiento sobre el negocio de la tecnología. <br><br>
+
+                    En el 2022 cambié de trabajo a <span class="red-text">administrador general</span> en una empresa del mismo rubro donde participé más activamente en el negocio y gestión de productos y servicios. Ahí fue cuando me fui inclinando más por el lado de la informática y la programación, con la idea de desarrollar páginas web para la venta de productos de la empresa. <br><br>
+
+                    Más tarde, en 2023, conseguí trabajo como <span class="red-text">asistente técnico</span> en el área de sistemas de la <span class="red-text">JST</span>, un organismo estatal de investigación de casos relacionados con la seguridad en el transporte, donde sigo hasta el día de hoy. Allí es donde adquirí la mayoría de mi experiencia relacionada con el manejo, mantenimiento, gestión y entendimiento de dispositivos tecnológicos, ya que cumplo dichas funciones en mi cargo. También adquirí experiencia en <span class="red-text">desarrollo de software</span> colaborando activamente con desarrolladores, cumpliendo funciones de <span class="red-text">programador</span> y <span class="red-text">analista funcional</span> para una variedad de proyectos de la organización.
+                </p>
+            </div>
+        </div>
+        <div class="sobremi-footcontent">
+            <div class="trabajos-section">
+                <div class="kingdigital-img">
+                    <div class="img-kingcase">
+                        <img src="imagenes/kingcase.jpg" alt="KING charset">
+                    </div>
+                    <div class="img-digitalprofile">
+                        <img src="imagenes/digitalprofilejpg.jpg" alt="Digital Profile">
+                    </div>
+                </div>
+                <p><span class="red-text">Digital Profile y King Case</span> - Primeros puestos de trabajo</p>
+            </div>
+            <div class="img-jst">
+                <img src="imagenes/jst.jpg" alt="JST">
+                <p><span class="red-text">Junta de Seguridad en el Transporte</span> <br>- Trabajo actual
+                </p>
+            </div>
+            <div class="img-leon">
+                <img src="imagenes/leonxiii.jpg" alt="León XIII">
+                <p><span class="red-text">Colegio León XIII</span> - Estudios Secundarios</p>
+            </div>
+            <div class="img-uade">
+                <img src="imagenes/uade.jpg" alt="UADE">
+                <p><span class="red-text">Universidad Argentina de la Empresa</span> <br>- Estudios Universitarios
+                </p>
+            </div>
+        </div>
+        <div class="titulo-hobbies">
+            <h2><span class="red-text">Hobbies</span> y Actividades Alternativas:</h2>
+        </div>
+        <div class="hobbies">
+            <div class="hobbies-text">
+                <p>En mi tiempo libre, lo dedico mayormente a la <span class="red-text">música</span>. En el año 2019 empecé clases de <span class="red-text">guitarra</span> con Fabio Pastrello, el guitarrista de la banda "Los Brujos". Luego continué mis estudios de manera autónoma hasta el día de hoy.
+
+                    Durante este proceso también aprendí otros instrumentos como <span class="red-text">piano</span>, <span class="red-text">bajo</span> y <span class="red-text">batería</span>, además de hacer cursos de producción musical y manejo de programas de edición como <span class="red-text">Ableton</span> y <span class="red-text">FL Studio</span>.
+
+                    Participé en varios proyectos de bandas donde tuve la oportunidad de tocar en vivo y grabar canciones en estudios de grabación.</p>
+                <div class="hobbies-img">
+                    <div class="img-guitarras">
+                        <img src="imagenes/guitarras.jpg" alt="guitarras">
+                    </div>
+                    <div class="img-piano">
+                        <img src="imagenes/piano.jpg" alt="piano">
+                    </div>
+                    <div class="img-ampli">
+                        <img src="imagenes/ampli.jpg" alt="ampli">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-social-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/ignacio-lemarie-a7b683231/"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://github.com/ilemarie"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://twitter.com/ignaciolemarie"><i class="fa-brands fa-x-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ignacio_lemarie"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            <p>© Mi Portfolio Profesional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
