@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,35 +30,27 @@
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#b74b4b"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <script>
-            function showSidebar(){
-                const sidebar = document.querySelector(".sidebar")  
-                sidebar.style.display = "flex"
-            }
-            function hideSidebar(){
-                const sidebar = document.querySelector(".sidebar")  
-                sidebar.style.display = "none"
-            }
-        </script>
     </header>
-    <section class="data-contacto">
-            <form action="https://formspree.io/tu-email-aqui" method="POST">
-                <div>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
-                </div>
-        
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required placeholder="Tu correo">
-                </div>
-                <div>
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-    </section>
+    <section class="contacto" id="contacto">
+        <form id="contactForm">
+          <div class="input-group">
+            <div class="input-box">
+              <input type="text" id="nombre" placeholder="Nombre completo">
+              <span class="error" id="error-nombre">Por favor, ingrese su nombre</span>
+            </div>
+      
+            <div class="input-box">
+              <input type="email" id="email" placeholder="@Email">
+              <span class="error" id="error-email">Por favor, ingrese un email válido</span>
+            </div>
+          </div>
+          <div class="input-group-2">
+            <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <span class="error" id="error-mensaje">Por favor, ingrese un mensaje</span>
+            <input type="submit" value="Enviar Mensaje" class="boton">
+          </div>    
+        </form>
+      </section>
     <footer class="footer">
         <div class="footer-social-icons">
             <a target="_blank" href="https://www.linkedin.com/in/ignacio-lemarie-a7b683231/"><i class="fa-brands fa-linkedin"></i></a>
@@ -69,5 +62,6 @@
             <p>© Mi Portfolio Profesional. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
 </body>
 </html>
